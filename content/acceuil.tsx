@@ -1,4 +1,6 @@
+"use client"
 import Image from "next/image"
+import DonationButtons from "./stripe/DonationButtons";
 export default function acceuil(){
     return(
           <main className="bg-white text-black">
@@ -20,6 +22,9 @@ export default function acceuil(){
         </nav>
         */}
       </header>
+      <section>
+        <DonationButtons />
+      </section>
 
       {/* CONTENT */}
       <section className="max-w-3xl mx-auto px-6 py-20 space-y-24 text-lg leading-relaxed text-left">
