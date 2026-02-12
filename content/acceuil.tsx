@@ -1,31 +1,9 @@
 "use client"
 import Image from "next/image"
-import DonationButtons from "./stripe/DonationButtons";
+import Navbar from "./Navbar";
 export default function acceuil(){
     return(
           <main className="bg-white text-black">
-
-      {/* HEADER */}
-      <header className="text-center py-10">
-        <h1 className="text-5xl font-bold font-serif">Comité social et culturel GILC</h1>
-
-        <p className="text-gray-600 mt-2 font-light tracking-wide bg-gradient-to-r from-red-500 to-amber-600 bg-clip-text text-transparent  font-serif">
-          Amour <span className="text-black">-</span> Solidarité <span className="text-black">-</span> Intégration <span className="text-black">-</span> communauté
-        </p>
-
-        {/* NAVIGATION 
-        <nav className="mt-8 flex justify-center gap-10 text-sm font-semibold uppercase">
-          <a className="hover:text-gray-700 cursor-pointer">Programme</a>
-          <a className="hover:text-gray-700 cursor-pointer">Services</a>
-          <a className="hover:text-gray-700 cursor-pointer">Activités</a>
-          <a className="hover:text-gray-700 cursor-pointer">À propos</a>
-        </nav>
-        */}
-      </header>
-      <section>
-        <DonationButtons />
-      </section>
-
       {/* CONTENT */}
       <section className="max-w-3xl mx-auto px-6 py-20 space-y-24 text-lg leading-relaxed text-left">
 
