@@ -13,21 +13,19 @@ export default function Footer() {
     ];
 
     return (
-        <footer className="text-center w-full bg-white py-10 px-6 items-start">
-
-            {/* Bloc adresse EXACTEMENT comme ton image */}
+        <footer className="text-center w-full py-10 px-6 items-start">
+            
             <div className="mb-8">
-                <h2 className="text-xl font-bold text-black mb-4 font-serif">
+                <h2 className="text-xl font-bold text-myred mb-4">
                     COMITÉ SOCIAL GILC
                 </h2>
 
-                <p className="text-black">2285 St. Laurent Blvd Unit D-18</p>
-                <p className="text-black">Ottawa (Ontario) K1G 4Z5</p>
-                <p className="text-black">+1 (343) 553-4491</p>
-                <p className="text-black">Email : contact@godislovecenter.com</p>
+                <p className="text-myred">2285 St. Laurent Blvd Unit D-18</p>
+                <p className="text-myred">Ottawa (Ontario) K1G 4Z5</p>
+                <p className="text-myred">+1 (343) 553-4491</p>
+                <p className="text-myred">Email : contact@godislovecenter.com</p>
             </div>
-
-            {/* Icônes sociales */}
+           
             <div className=" gap-5 mb-8">
                 {socialLinks.map((item, idx) => (
                     <a

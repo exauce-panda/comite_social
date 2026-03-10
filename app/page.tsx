@@ -1,4 +1,4 @@
-import Acceuil from "@/content/acceuil";
+import Acceuil from "@/content/test";
 export default function Home() {
   return (
     <div>

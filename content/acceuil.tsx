@@ -1,7 +1,5 @@
 "use client"
-import Image from "next/image"
-import Navbar from "./Navbar";
-export default function acceuil(){
+export default function Acceuil(){
     return(
           <main className="bg-white text-black">
       {/* CONTENT */}
@@ -9,7 +7,7 @@ export default function acceuil(){
 
         {/* À PROPOS */}
         <div>
-          <h2 className="text-4xl font-bold text-center mb-14 bg-gradient-to-r from-red-500 to-amber-600 bg-clip-text text-transparent  font-serif">À propos de nous</h2>
+          <h2 className="text-4xl font-bold font-serif mb-14 bg-gradient-to-r from-red-500 to-amber-600 bg-clip-text text-transparent">À propos de nous</h2>
           <p>
             Nous sommes un pilier de notre mission d&apos;amour, de solidarité et d&apos;intégration
             communautaire. Basé à Ottawa, il vise à répondre aux besoins concrets des jeunes et des
@@ -41,7 +39,7 @@ export default function acceuil(){
 
         {/* OBJECTIFS PRINCIPAUX */}
         <div>
-          <h2 className="text-4xl font-bold text-center mb-14 bg-gradient-to-r from-red-500 to-amber-600 bg-clip-text text-transparent  font-serif">Objectifs principaux</h2>
+          <h2 className="text-4xl font-bold mb-14 bg-gradient-to-r from-red-500 to-amber-600 bg-clip-text text-transparent  font-serif">Objectifs principaux</h2>
           <p>
             Contribuer activement au bien-être global des jeunes, des familles et personnes âgées,
             en particulier francophones à Ottawa, en favorisant leur intégration sociale et
@@ -49,8 +47,8 @@ export default function acceuil(){
             et humanitaire, conformément à la mission chrétienne de God is Love Center.
           </p>
 
-          <h3 className="text-3xl font-bold mt-12 mb-6  font-serif">Objectifs spécifiques</h3>
-          <ol className="list-decimal ml-8 space-y-8">
+          <h3 className="text-3xl text-black font-bold mt-12 mb-6  font-serif">Objectifs spécifiques</h3>
+          <ol className="text-black list-decimal ml-8 space-y-8">
 
             <li>
               <strong>Favoriser l&apos;intégration des nouveaux arrivants</strong>
@@ -105,7 +103,7 @@ export default function acceuil(){
 
         {/* VISION */}
         <div>
-          <h2 className="font-serif text-4xl font-bold text-center mb-14 bg-gradient-to-r from-red-500 to-amber-600 bg-clip-text text-transparent">Vision</h2>
+          <h2 className="font-serif text-4xl font-bold mb-14 bg-gradient-to-r from-red-500 to-amber-600 bg-clip-text text-transparent">Vision</h2>
           <p>
             Être une référence chrétienne francophone d&apos;espoir et de solidarité dans la société
             canadienne, servant la communauté par l&apos;amour, l&apos;action et la foi.
@@ -114,7 +112,7 @@ export default function acceuil(){
 
         {/* MISSION */}
         <div>
-          <h2 className="text-4xl font-bold text-center mb-14 bg-gradient-to-r from-red-500 to-amber-600 bg-clip-text text-transparent  font-serif">Mission</h2>
+          <h2 className="text-4xl font-bold mb-14 bg-gradient-to-r from-red-500 to-amber-600 bg-clip-text text-transparent  font-serif">Mission</h2>
           <p>
             Offrir des services d&apos;entraide, de soutien et d&apos;accompagnement qui répondent aux
             besoins pratiques, sociaux et spirituels des familles et des jeunes dans une perspective
@@ -122,111 +120,9 @@ export default function acceuil(){
           </p>
         </div>
 
-        {/* ORGANISATION INTERNE */}
-        <div>
-          <h2 className="font-serif text-4xl font-bold text-center mb-14 bg-gradient-to-r from-red-500 to-amber-600 bg-clip-text text-transparent">Organisation interne</h2>
-          <p className="mb-12 text-center">
-            Le Comité social et culturel est divisé en 4 départements principaux :
-          </p>
-
-          <div className="space-y-12">
-            <div>
-              <h3 className="text-2xl font-bold mb-4 text-center">Banque alimentaire</h3>
-              <ul className="ml-6 space-y-1 text-center">
-                <li>Distribution de denrées alimentaires.</li>
-                <li>Partenariats avec des banques alimentaires locales.</li>
-              </ul>
-              <div className="flex flex-col justify-center md:flex-row p-[40px] gap-9">
-              <Image 
-              src="/image/activite/nouriture_2.jpg" 
-              alt="Acceuille des nouveaux"
-              width={600}
-              height={400}
-              />
-              <Image 
-              src="/image/activite/nouriture.jpg" 
-              alt="Acceuille des nouveaux"
-              width={600}
-              height={400}
-              />              
-              </div>  
-              <div className="text-center pb-7">___________________</div>                          
-            </div>
-
-            <div>
-              <h3 className="text-2xl font-bold mb-4 text-center">Groupe d&apos;entraide</h3>
-              <ul className="text-center ml-6 space-y-1">
-                <li>Déménagement solidaire.</li>
-                <li>Décoration lors des événements familiaux.</li>
-              </ul>
-              <div className="flex flex-col justify-center md:flex-row p-[40px] gap-9">
-              <Image 
-              src="/image/activite/decoration.jpg" 
-              alt="Acceuille des nouveaux"
-              width={600}
-              height={400}
-              />
-              <Image 
-              src="/image/activite/jeunesse_jeu_2.jpg" 
-              alt="Acceuille des nouveaux"
-              width={600}
-              height={400}
-              />              
-              </div>    
-              <div className="text-center pb-7">___________________</div>                                
-            </div>
-
-            <div>
-              <h3 className="text-2xl font-bold mb-4 text-center">Soutien événementiel</h3>
-              <ul className="ml-6 space-y-1 text-center">
-                <li>Accompagnement pour mariages, naissances, intégrations.</li>
-                <li>Soutien logistique, animation et célébration.</li>
-              </ul>
-              <div className="flex flex-col justify-center md:flex-row p-[40px] gap-9">
-              <Image 
-              src="/image/activite/enfent.jpg" 
-              alt="Acceuille des nouveaux"
-              width={600}
-              height={400}
-              />
-              <Image 
-              src="/image/activite/bebe.jpg" 
-              alt="Acceuille des nouveaux"
-              width={600}
-              height={400}
-              />              
-              </div>         
-              <div className="text-center pb-7">___________________</div>     
-            </div>
-
-            <div>
-              <h3 className="text-2xl font-bold mb-4 text-center">Accompagnement</h3>
-              <ul className="text-center ml-6 space-y-1">
-                <li>Accueil des nouveaux arrivants.</li>
-                <li>Orientation vers logement, emploi, santé.</li>
-                <li>Ateliers d&apos;information (vie au Canada, francisation).</li>
-              </ul>
-              <div className="flex flex-col justify-center md:flex-row p-[40px] gap-9">
-              <Image 
-              src="/image/activite/vieEnRose_2.jpg" 
-              alt="Acceuille des nouveaux"
-              width={600}
-              height={400}
-              />
-              <Image 
-              src="/image/activite/diplome.jpg" 
-              alt="Acceuille des nouveaux"
-              width={600}
-              height={400}
-              />              
-              </div>                      
-            </div>
-          </div>
-        </div>
-
         {/* RESSOURCES */}
         <div>
-          <h2 className="font-serif text-4xl font-bold text-center mb-14 bg-gradient-to-r from-red-500 to-amber-600 bg-clip-text text-transparent">Fondation Elizabeth Greenshields</h2>
+          <h2 className="font-serif text-4xl font-bold mb-14 bg-gradient-to-r from-red-500 to-amber-600 bg-clip-text text-transparent">Fondation Elizabeth Greenshields</h2>
           <ul className="list-disc ml-8 space-y-2">
             <li>1814 rue Sherbrooke Ouest, Montréal (QC) H3H 1E4</li>
             <li>Téléphone : 514-937-9225</li>
@@ -235,7 +131,7 @@ export default function acceuil(){
             <li>Site : elizabethgreenshieldsfoundation.org</li>
           </ul>
 
-          <h2 className="font-serif text-4xl font-bold text-center mt-20 mb-10 bg-gradient-to-r from-red-500 to-amber-600 bg-clip-text text-transparent">Ressources supplémentaires</h2>
+          <h2 className="font-serif text-4xl font-bold mt-20 mb-10 bg-gradient-to-r from-red-500 to-amber-600 bg-clip-text text-transparent">Ressources supplémentaires</h2>
 
           <h3 className="text-2xl font-bold mb-4">Centre québécois de philanthropie</h3>
           <ul className="list-disc ml-8 space-y-2">
