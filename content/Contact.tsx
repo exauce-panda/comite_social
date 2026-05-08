@@ -22,7 +22,7 @@ export default function Contact() {
 
   return (
     <div className="max-w-xl mx-auto p-4">
-        <p className="p-6 pt-5 text-center mt-2 font-light font-mono tracking-wide bg-gradient-to-r from-red-500 to-amber-600 bg-clip-text text-transparent">
+        <p className="p-6 pt-5 text-center mt-2 font-bold font-mono tracking-wide bg-gradient-to-r from-red-500 to-amber-600 bg-clip-text text-transparent">
           Questions<span className="text-black">,</span> idées<span className="text-black">,</span> ou juste bésoin d'entrer en contact<span className="text-black">?</span> Laissez nous un message<span className="text-black">!</span>
         </p>
       <form onSubmit={handleSubmit} className="space-y-4">

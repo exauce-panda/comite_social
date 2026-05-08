@@ -4,8 +4,7 @@ export default function Services(){
     return(
         <div>
           <div>
-
-        <p className="p-6 pt-5 text-center text-gray-600 mt-2 font-light font-mono tracking-wide bg-gradient-to-r from-red-500 to-amber-600 bg-clip-text text-transparent">
+        <p className="p-6 pt-5 font-mono font-bold tracking-wide text-center bg-gradient-to-r from-red-500 to-amber-600 bg-clip-text text-transparent">
           Nous offrons differents services pour soutenir les jeunes<span className="text-black">,</span> les familles et les personnes âgées<span className="text-black">,</span> en particulier francophones à Ottawa<span className="text-black">,</span> dans un esprit de solidarité et d<span className="text-black">&apos;</span>intégration communautaire<span className="text-black">.</span>
         </p>
 

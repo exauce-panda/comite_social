@@ -1,11 +1,13 @@
 "use client";
 
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useState } from "react";
 
 
 export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const pathname = usePathname;
 
   return (
     <div className="text-black">
@@ -14,7 +16,9 @@ export default function Header() {
           <div className="lg:flex items-center justify-between py-6 lg:pt-10 lg:px-70">
             
             {/* Logo */}
-            <Link href="/" className="flex justify-center items-center p-2 pb-9">
+            <Link href="/" className={`flex justify-center items-center p-2 pb-9 
+             ${pathname() === "/" ? "bg-gradient-to-r from-red-500 to-amber-600 bg-clip-text text-transparent" : "text-black hover:text-red-500"}`}
+            >
               <span className="mr-2">
                 <img src="/image/logos/logoGilc.png" alt="logo" width="70" height="70"/>
               </span>
@@ -36,7 +40,7 @@ export default function Header() {
                     <div className="absolute left-0 bottom-0 z-20 h-0 w-full opacity-75 transition-all group-hover:h-2 group-hover:bg-yellow"></div>
                     <Link
                       href={item.path}
-                      className=" font-montserrat underline px-2 text-lg bg-black hover:bg-gradient-to-r from-red-500 to-amber-600 bg-clip-text text-transparent"
+                      className={`${pathname() === item.path ? "bg-gradient-to-r from-red-500 to-amber-600 bg-clip-text text-transparent" : "text-black hover:text-red-500"} font-montserrat underline px-2 text-lg`}
                     >
                       {item.name}
                     </Link>
@@ -47,7 +51,13 @@ export default function Header() {
             <div className="flex justify-center lg:block">
               <Link
                 href="/don"
-                className="px-4 py-2 pr-7 pl-7 bg-transparent border-2 border-red-500 text-red-500 rounded-full hover:from-red-600 hover:to-amber-700 transition-all"
+ className={`px-4 py-2 pr-7 pl-7 border-2 border-red-500 rounded-full transition-all
+${
+  pathname() === "/don"
+    ? "hidden"
+    : "text-red-500 hover:text-myorange hover:border-myorange"
+}`}
+
               >
                 Faire un don
               </Link>

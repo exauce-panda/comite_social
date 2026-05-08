@@ -8,22 +8,23 @@ export default function Test(){
     <div className="font-barlow container lg:px-70 py-2 text-lg leading-relaxed">  
 
        <p className="pt-5 text-center text-gray-600 mt-2 font-light font-mono tracking-wide bg-gradient-to-r from-red-500 to-amber-600 bg-clip-text text-transparent">
-          Amour <span className="text-black">-</span> Solidarité <br></br><span className="hidden text-black lg:block">-</span> Intégration <span className="text-black">-</span> communauté
+          Amour <span className="text-black">-</span> Solidarité <br className="lg:hidden"></br><span className="hidden text-black lg:inline">-</span> Intégration <span className="text-black">-</span> communauté
         </p>
 
       <section className="py-7 m-4 lg:py-20">
-      <div className="bg-gradient-to-r from-red-500 to-amber-600 p-4">
-        <h1 className="pt-3 text-6xl font-sans font-bold md:text-5xl lg:text-6xl text-myred">
+      <div className="bg-gradient-to-r from-red-500 to-amber-600 p-4 lg:flex lg:justify-center lg:w-300">
+        <p>
+        <h1 className="pt-3 text-6xl font-sans font-bold md:text-5xl lg:text-6xl text-white">
           Qui <br></br> sommes <br></br> nous
         </h1>
-
         <p className="pt-3 text-xl font-light text-white">
           Fondé en Mai 2024, le Comité social et culturel de God is Love Center est né d'une vision évangélique chrétienne de soutien spirituel et social. 
           Avec le temps, le comité social et culturel a été structuré pour mieux répondre aux réalités locales des nouveaux arrivants, des familles en difficulté et de la jeunesse.
           <br></br>
           Animé par l'amour de Dieu et le service aux autres, notre comité se donne pour mission de bâtir une communauté plus solidaire, accueillante et résiliente, où chacun peut s'épanouir.
         </p>
-        <div className="flex justify-center mt-4">
+        </p>
+        <div className="flex justify-center">
           <Image src="/image/activite/bggtest.jpg" width={380} height={280} alt="Notre équipe" />
         </div>
       </div> 
